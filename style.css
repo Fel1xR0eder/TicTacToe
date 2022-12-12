@@ -7,9 +7,15 @@ tr {
 }
 
 td {
+    position: relative;
     width: 133px;
     height: 133px;
     border: 5px solid black;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: rgba(25, 185, 253, 0.2);
 }
 
 tr:first-child td {
@@ -26,4 +32,16 @@ tr:last-child td {
 
 tr td:last-child {
     border-right: 0;
+}
+
+.center {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    right: 0;
+    bottom: 0;
+}
+
+.d-none {
+    display: none;
 }
