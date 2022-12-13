@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <div class="player-panel">
         <div id="player-1">
             <img src="./img/circle.png"> You
@@ -20,6 +19,16 @@
             <img src="./img/cross.png"> Me
         </div>
     </div>
+
+    <div id="line-0" class="end-line" style="top: 385px"></div>
+    <div id="line-1" class="end-line" style="top: 525px"></div>
+    <div id="line-2" class="end-line" style="top: 665px"></div>
+    <div id="line-3" class="end-line spin-90-deg" style="top:527px"></div>
+    <div id="line-4" class="end-line spin-90-deg" style="top:527px; left: 672px;" ></div>
+    <div id="line-5" class="end-line spin-90-deg" style="top:527px; right: 670px;"></div>
+    <div id="line-6" class="end-line" style="top: 525px; transform: rotate(45deg) scaleX(0)"></div>
+    <div id="line-7" class="end-line" style="top: 527px; transform: rotate(-45deg) scaleX(0)"></div>
+
     <table>
         <tr>
             <td onclick="fillShape(0)">
@@ -70,6 +79,9 @@
             </td>
         </tr>
     </table>
+
+    <img class="game-over d-none" id="game-over" src="./img/game-over.png">
+    <button class="restart-btn d-none" onclick="restart()" id="restart-btn">Restart Game</button>
 </body>
 
 </html>

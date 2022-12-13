@@ -3,6 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 70vh;
 }
 
 .player-panel {
@@ -74,4 +75,48 @@ tr td:last-child {
 
 .d-none {
     display: none;
+}
+
+.end-line {
+    width: 410px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    transform: scaleX(0);
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
+}
+
+.spin-90-deg {
+    transform: rotate(90deg) scaleX(0);
+}
+
+.game-over {
+    position: absolute;
+    z-index: 2;
+    animation: zoomIn 500ms ease-in-out;
+}
+
+.restart-btn {
+    position: absolute;
+    top: 555px;
+    border-color: white;
+    cursor: pointer;
+    width: 185px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: rgb(29, 20, 125);
+    color: white;
+    font-size: 27px;
+    z-index: 3;
+    animation: zoomIn 500ms ease-in-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    } 
+    to {
+        transform: scale(1);
+    }
 }
