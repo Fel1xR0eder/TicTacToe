@@ -13,75 +13,76 @@
 <body>
     <div class="player-panel">
         <div id="player-1">
-            <img src="./img/circle.png"> You
+            <img class="player-symbol" src="./img/circle.png"> PLAYER 1
         </div>
         <div class="player-inactive" id="player-2">
-            <img src="./img/cross.png"> Me
+            <img class="player-symbol" src="./img/cross.png"> PLAYER 2
         </div>
     </div>
+    <div class="relative">
+        <div id="line-0" class="end-line" style="top: 60px"></div>
+        <div id="line-1" class="end-line" style="top: 200px"></div>
+        <div id="line-2" class="end-line" style="top: 340px"></div>
+        <div id="line-3" class="end-line spin-90-deg" style="top:204px"></div>
+        <div id="line-4" class="end-line spin-90-deg" style="top:204px; left: 142px;"></div>
+        <div id="line-5" class="end-line spin-90-deg" style="top:204px; right: 147px;"></div>
+        <div id="line-6" class="end-line" style="top: 200px; transform: rotate(45deg) scaleX(0)"></div>
+        <div id="line-7" class="end-line" style="top: 204px; transform: rotate(-45deg) scaleX(0)"></div>
 
-    <div id="line-0" class="end-line" style="top: 385px"></div>
-    <div id="line-1" class="end-line" style="top: 525px"></div>
-    <div id="line-2" class="end-line" style="top: 665px"></div>
-    <div id="line-3" class="end-line spin-90-deg" style="top:527px"></div>
-    <div id="line-4" class="end-line spin-90-deg" style="top:527px; left: 672px;" ></div>
-    <div id="line-5" class="end-line spin-90-deg" style="top:527px; right: 670px;"></div>
-    <div id="line-6" class="end-line" style="top: 525px; transform: rotate(45deg) scaleX(0)"></div>
-    <div id="line-7" class="end-line" style="top: 527px; transform: rotate(-45deg) scaleX(0)"></div>
+        <table>
+            <tr>
+                <td onclick="fillShape(0)">
+                    <img id="circle-0" class="center d-none" src="./img/circle.png">
+                    <img id="cross-0" class="center d-none" src="./img/cross.png">
+                </td>
 
-    <table>
-        <tr>
-            <td onclick="fillShape(0)">
-                <img id="circle-0" class="center d-none" src="./img/circle.png">
-                <img id="cross-0" class="center d-none" src="./img/cross.png">
-            </td>
+                <td onclick="fillShape(1)">
+                    <img id="circle-1" class="center d-none" src="./img/circle.png">
+                    <img id="cross-1" class="center d-none" src="./img/cross.png">
+                </td>
 
-            <td onclick="fillShape(1)">
-                <img id="circle-1" class="center d-none" src="./img/circle.png">
-                <img id="cross-1" class="center d-none" src="./img/cross.png">
-            </td>
+                <td onclick="fillShape(2)">
+                    <img id="circle-2" class="center d-none" src="./img/circle.png">
+                    <img id="cross-2" class="center d-none" src="./img/cross.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="fillShape(3)">
+                    <img id="circle-3" class="center d-none" src="./img/circle.png">
+                    <img id="cross-3" class="center d-none" src="./img/cross.png">
+                </td>
 
-            <td onclick="fillShape(2)">
-                <img id="circle-2" class="center d-none" src="./img/circle.png">
-                <img id="cross-2" class="center d-none" src="./img/cross.png">
-            </td>
-        </tr>
-        <tr>
-            <td onclick="fillShape(3)">
-                <img id="circle-3" class="center d-none" src="./img/circle.png">
-                <img id="cross-3" class="center d-none" src="./img/cross.png">
-            </td>
+                <td onclick="fillShape(4)">
+                    <img id="circle-4" class="center d-none" src="./img/circle.png">
+                    <img id="cross-4" class="center d-none" src="./img/cross.png">
+                </td>
 
-            <td onclick="fillShape(4)">
-                <img id="circle-4" class="center d-none" src="./img/circle.png">
-                <img id="cross-4" class="center d-none" src="./img/cross.png">
-            </td>
+                <td onclick="fillShape(5)">
+                    <img id="circle-5" class="center d-none" src="./img/circle.png">
+                    <img id="cross-5" class="center d-none" src="./img/cross.png">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="fillShape(6)">
+                    <img id="circle-6" class="center d-none" src="./img/circle.png">
+                    <img id="cross-6" class="center d-none" src="./img/cross.png">
+                </td>
 
-            <td onclick="fillShape(5)">
-                <img id="circle-5" class="center d-none" src="./img/circle.png">
-                <img id="cross-5" class="center d-none" src="./img/cross.png">
-            </td>
-        </tr>
-        <tr>
-            <td onclick="fillShape(6)">
-                <img id="circle-6" class="center d-none" src="./img/circle.png">
-                <img id="cross-6" class="center d-none" src="./img/cross.png">
-            </td>
+                <td onclick="fillShape(7)">
+                    <img id="circle-7" class="center d-none" src="./img/circle.png">
+                    <img id="cross-7" class="center d-none" src="./img/cross.png">
+                </td>
 
-            <td onclick="fillShape(7)">
-                <img id="circle-7" class="center d-none" src="./img/circle.png">
-                <img id="cross-7" class="center d-none" src="./img/cross.png">
-            </td>
+                <td onclick="fillShape(8)">
+                    <img id="circle-8" class="center d-none" src="./img/circle.png">
+                    <img id="cross-8" class="center d-none" src="./img/cross.png">
+                </td>
+            </tr>
+        </table>
+        <img class="game-over d-none" id="game-over" src="./img/game-over.png">
+        <button class="restart-btn d-none" onclick="restart()" id="restart-btn">Restart Game</button>
+    </div>
 
-            <td onclick="fillShape(8)">
-                <img id="circle-8" class="center d-none" src="./img/circle.png">
-                <img id="cross-8" class="center d-none" src="./img/cross.png">
-            </td>
-        </tr>
-    </table>
-
-    <img class="game-over d-none" id="game-over" src="./img/game-over.png">
-    <button class="restart-btn d-none" onclick="restart()" id="restart-btn">Restart Game</button>
 </body>
 
 </html>

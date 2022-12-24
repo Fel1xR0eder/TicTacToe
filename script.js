@@ -38,7 +38,8 @@ function draw() {
 function checkForWin() {
     let winner;
 
-    //ROWS 2 WIN
+    // ROWS 2 WIN
+    
     if (fields[0] == fields[1] && fields[1] == fields[2] && fields[0]) {
         winner = fields[0];
         document.getElementById('line-0').style.transform = "scaleX(1)"
